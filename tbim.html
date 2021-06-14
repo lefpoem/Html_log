@@ -1,0 +1,119 @@
+<!doctype HTML>
+<html>
+<head>
+<link rel="shortcut icon" href="index.jpeg">
+<title>这是一个带图片的标签</title>
+</head>
+<body>
+    <!--文字在图片中排列方式-->
+    <p>图片<img src="mt.jpeg" align="bottom" width="50" height="50"/>底部</p>
+    <p>图片<img src="mt.jpeg" align="middle" width="50" height="50"/>居中</p>
+    <p>图片<img src="mt.jpeg" align="top" width="50" height="50"/>顶上</p>
+    <p>图片<img src="mt.jpeg" align="left" width="50" height="50"/>浮动在左边</p>
+    <!--tr 表示行，tb表示单个表格 td is abbraviation of table data-->
+    <br/>
+    <table border="1" cellspacing="10" bgcolor="black">
+        <!--跨列-->
+        <th colspan="2">表头</th>
+        <tr>
+            <th>这是一个表头</th>
+            <th>这是另一个表头</th>
+        </tr>
+        <tr>
+            <td>row1,cell1</td>
+            <td>row1,cell2</td>
+        </tr>
+        <tr>
+            <td>row2,cell1</td>
+            <td>row2,cell2</td>
+        </tr>
+        <tr>
+            <!--将空格打出边框no-breaking space-->
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+    <!--以下是五边框表格 border="0"或者不填为没有边框-->
+    <table background="mt.jpeg">
+        <tr>
+            <td>100</td>
+            <td>200</td>
+        </tr>
+    </table>
+    <!--设置单元格边距-->
+    <table border="1" cellpadding="20">
+        <caption>电话簿</caption>
+        <tr>
+            <th>姓名</th>
+            <td>Bill Gates</td>
+        </tr>
+        <tr>
+            <!--横跨两行单元格-->
+            <th rowspan="2">电话</th>
+            <td>555-37865</td>
+        </tr>
+        <tr>
+            <td>555-39735</td>
+        </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <td background="index.jpeg">
+                <p>这是一个段落</p>
+                <p>这是另一个段落</p>
+            </td>
+            <td>这个单元包含一个表格：
+                <table border="1">
+                    <tr>
+                        <td>A</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>D</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>这个单元包含一个列表：
+                <ul type="disc">
+                    <li>香蕉</li>
+                    <li>苹果</li>
+                    <li>西瓜</li>
+                </ul>
+            </td>
+            <td align="left">HELLO
+                <ol start="10">
+                    <li>哈密瓜</li>
+                    <li>冬瓜</li>
+                    <li>南瓜</li>
+                </ol>
+            </td>   
+        </tr>
+    </table>
+    <p>
+        <!--dl自定义列表dd自定义描述dt自定义列表项-->
+        <dl>
+        <dt>coffee</dt>
+        <dd>black hot drink</dd>
+        <dt>milk</dt>
+        <dd>white cold drink</dd>
+        </dl>
+    </p>
+    <ul type="circle">
+        <li>TYPE</li>
+    </ul>
+    <ol type="I">
+        <li>TYOE</li>
+        <li>tls</li>
+        <ul>
+            <li>t</li>
+            <ul>
+                <li>s</li>
+            </ul>
+        </ul>
+        <li>pp</li>
+        <li>sss</li>
+    </ol>
+</body>
+</html>
