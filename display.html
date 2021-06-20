@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body{
+        background-color: burlywood;
+    }
+    span{
+        display: block;
+    }
+    .hidden{
+        display: none;
+    }
+    .hiden{
+        visibility: hidden;
+        border: 5px solid black;
+    }
+    .position{
+        bottom: 0;
+        position: fixed;
+        right: 0;
+    }
+    #sticky{
+        border: 5px solid lightcoral;
+        top: 0;
+        position: -webkit-sticky;/*碰到空白会停止*/
+        position: sticky;
+    }
+    img{
+        width: 100%;
+        top: 0;
+        position: absolute;
+        z-index: -1;
+    }
+</style>
+</head>
+<body></body>
+    <h1 class="position">This a visible header!</h1>
+    <h1 class="hidden">This a hidden header!</h1>   
+    <p id="sticky">For hiden,the hidden header takes some space!</p>
+    <p>For hidden,the hidden header dosen't take any space!</p>
+    <h1 class="hiden">This a hidden header!</h1>
+    <span>孙子曰：</span><span>对于孙子正确</span>
+    <img src="fanbu.jpeg"/>
+</body>
+</html>
