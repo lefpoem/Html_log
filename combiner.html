@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--The code shows a difference between 
+        offspring selector and son selector-->
+    <style>
+        div p {
+            background-color: magenta;
+        }
+        div > p{
+            background-color: yellow;
+        }
+        div ~ p{
+            background-color: linen;
+        }
+        div + p{
+            background-color: lime;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <p>This a length of son text.</p>
+        <span><p>This a length of offspring text.</p></span>
+    </div>
+    <p>This a near text.</p>
+    <p>This a sbling text.</p>
+</body>
+</html>
