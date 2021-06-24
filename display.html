@@ -8,8 +8,11 @@
     span{
         display: block;
     }
-    .hidden{
+    div p{
         display: none;
+    }
+    div:hover p{
+        display:block
     }
     .hiden{
         visibility: hidden;
@@ -34,9 +37,9 @@
     }
 </style>
 </head>
-<body></body>
+<body>
     <h1 class="position">This a visible header!</h1>
-    <h1 class="hidden">This a hidden header!</h1>   
+    <div>Click here!<p>This a invisible text.</p></div>  
     <p id="sticky">For hiden,the hidden header takes some space!</p>
     <p>For hidden,the hidden header dosen't take any space!</p>
     <h1 class="hiden">This a hidden header!</h1>
